@@ -3,7 +3,10 @@
 using namespace std;
 
 int main() {
-    for(int i = 1; i <=10; i++){
-        cout << 6 * i << endl;
+    int n , i ;
+    cout << "please enter n " << endl;
+    cin >> n;
+    for(i = 1; i<=10; i++){
+        cout << endl << i*n << endl;
     }
 }
