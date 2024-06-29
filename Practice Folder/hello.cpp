@@ -2,11 +2,13 @@
 using namespace std;
 
 int main() {
-    int row, col;
+    int row,col;
+    char sym = 'a';
     cin >> row >> col;
-    for(int i = 1; i<=row; i++){
-        for(int j = col; j>=1; j--){
-            cout << j << " ";
+    for(int i = 0; i<row; i++){
+        sym = sym + i;
+        for(int j = 1; j<=col; j++){
+            cout << sym << " ";
         }
         cout << endl;
     }
