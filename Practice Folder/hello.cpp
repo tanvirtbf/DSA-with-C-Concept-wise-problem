@@ -1,11 +1,9 @@
-//print 10 to 1 number (reverse number)
+//print numbers from 1 to 100 but difference is 3
 #include <iostream>
 using namespace std;
 
 int main() {
-    int num,j;
-    cin >> num >> j;
-    for(int i = num; i>=j; i-- ){
-        cout<< i << " ";
+    for(int i = 1; i<=100; i+=3){
+        cout << i << endl;
     }
 }
