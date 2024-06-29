@@ -1,10 +1,10 @@
-//print a to z
+//print 10 to 1 number (reverse number)
 #include <iostream>
 using namespace std;
 
 int main() {
-    char nam;
-    for(nam = 'a'; nam <='z'; nam=nam+1){
+    int nam;
+    for(nam = 10; nam >=1; nam--){
         cout<<nam << " ";
     }
 }
