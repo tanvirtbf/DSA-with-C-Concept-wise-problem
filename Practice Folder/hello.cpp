@@ -1,9 +1,10 @@
-//print 100 to 200 number
+//print a to z
 #include <iostream>
 using namespace std;
 
 int main() {
-    for(int i = 100; i<=200; i++){
-        cout<< i << endl;
+    char nam;
+    for(nam = 'a'; nam <=122; nam++){
+        cout<<nam << " ";
     }
 }
