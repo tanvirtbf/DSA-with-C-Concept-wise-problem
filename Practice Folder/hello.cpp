@@ -3,8 +3,9 @@
 using namespace std;
 
 int main() {
-    int nam;
-    for(nam = 10; nam >=1; nam--){
-        cout<<nam << " ";
+    int num,j;
+    cin >> num >> j;
+    for(int i = num; i>=j; i-- ){
+        cout<< i << " ";
     }
 }
