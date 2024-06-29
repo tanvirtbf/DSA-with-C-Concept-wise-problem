@@ -2,10 +2,10 @@
 using namespace std;
 
 int main() {
-    int row,col;
+    int row, col;
     cin >> row >> col;
-    for(int i=1; i<=row; i++){
-        for(int j=1; j<=col; j++){
+    for(int i = 1; i<=row; i++){
+        for(int j = col; j>=1; j--){
             cout << j << " ";
         }
         cout << endl;
