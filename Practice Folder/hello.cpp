@@ -3,21 +3,12 @@
 using namespace std;
 
 int main() {
-    //prime number
-    string yesPrime = "This is a prime Number", noPrime="This is not a prime number";
-    int n, check=0;
-    cin >> n;
-    if(n<2){
-        cout << noPrime << endl;
-        return 0;
-    }
-    for(int i = 2; i<n; i++ ){
-        if(n%i == 0){
-            check++;
-            cout << noPrime << endl;
-            return 0;
+    int row,col;
+    cin >> row >> col;
+    for(int i = 1; i<=row; i++){
+        for(int j = 1; j<=col; j++){
+            cout << i << " ";
         }
+        cout << endl;
     }
-    cout << yesPrime << endl;
-    return 0;
 }
