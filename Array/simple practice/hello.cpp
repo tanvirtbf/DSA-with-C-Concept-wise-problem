@@ -3,18 +3,16 @@
 using namespace std;
 
 int main(){
-    int n ;
+    int n,findIndex;
+    cout << "Enter Array Size Number : " ;
     cin >> n;
+    cout << endl << "Please enter search number : " << endl;
+    cin >> findIndex;
     int arr[n];
     for(int i = 0; i<n; i++){
         cin >> arr[i];
-    }
-    cout << "Now give a number for searching from this array : " << endl;
-    int searchNum ;
-    cin >> searchNum;
-    for(int i = 0; i<n; i++){
-        if(searchNum == arr[i]){
-            cout << searchNum << " number index is : " << i << endl;
+        if(findIndex == arr[i]){
+            cout << "Search Number Index is : " << i << endl;
             return 0;
         }
     }
