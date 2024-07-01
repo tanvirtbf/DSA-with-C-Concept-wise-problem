@@ -2,9 +2,7 @@
 using namespace std;
 
 int main() {
-    int row, col;
-    cin >> row ;
-    col = row * 2 - 1;
+    int row=5, col=row * 2 - 1;
     int left = row, right = row;
     for(int i = row ; i>=1; i--){
         for(int j = 1; j<=col; j++){
@@ -17,6 +15,20 @@ int main() {
         }
         left = left -1;
         right = right +1;
+        cout << endl;
+    }
+    //Another Technic
+    int n = 5, numOfStar = 1;
+    for(int i = 1; i<=n; i++){
+        //space print
+        for(int j = 1; j<=n-i; j++){
+            cout << " ";
+        }
+        //star print
+        for(int j = 1; j<=numOfStar; j++){
+            cout << "*";
+        }
+        numOfStar += 2;
         cout << endl;
     }
 }
