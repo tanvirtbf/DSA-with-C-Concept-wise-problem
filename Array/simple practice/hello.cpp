@@ -3,6 +3,7 @@
 using namespace std;
 
 int main(){
+
     int n,findIndex;
     cout << "Enter Array Size Number : " ;
     cin >> n;
