@@ -2,13 +2,18 @@
 using namespace std;
 
 int main() {
-    int n,main=0,num,r;
+    int n;
+    cout << "Please Enter your array size : ";
     cin >> n;
-    num = n;
-    while(num!=0){
-        int r = num % 10;
-        main = main + r;
-        num = num / 10;
+    int arr[n];
+    for(int i = 0; i<n; i++){
+        cin >> arr[i];
     }
-    cout << main << endl;
+    int result = arr[0];
+    for(int i = 0; i<n; i++){
+        if(result>arr[i]){
+            result = arr[i];
+        }
+    }
+    cout << result << endl;
 }
