@@ -11,7 +11,7 @@ int main() {
     }
     int result = arr[0];
     for(int i = 0; i<n; i++){
-        if(result>arr[i]){
+        if(result<arr[i]){
             result = arr[i];
         }
     }
