@@ -2,28 +2,16 @@
 using namespace std;
 
 int main() {
-    int row=5,col=5;
-    for(int i=1; i<=row;i++){
-        //space printing...
-        for(int j = 1; j<=col-i; j++){
-            cout << " ";
+    int row, col;
+    cin >> row ;
+    col = row * 2 - 1;
+    int left = row, right = row;
+    for(int i = row ; i>=1; i--){
+        for(int j = left; j<=right; j++){
+            cout << "*";
         }
-        //number printing...
-        for(int j = 1; j<=i; j++){
-            cout << j;
-        }
-        cout << endl;
-    }
-    int r=5,c=5;
-    for(int i = 1; i<=r; i++){
-        for(int j = 1; j<=c-i; j++){
-            cout << " ";
-        }
-        for(int j = 1; j<=i; j++){
-            char a = 'A';
-            a = a + j-1;
-            cout << a;
-        }
+        left = left -1;
+        right = right +1;
         cout << endl;
     }
 }
