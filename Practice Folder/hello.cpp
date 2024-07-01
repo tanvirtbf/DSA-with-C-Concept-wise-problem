@@ -31,4 +31,16 @@ int main() {
         numOfStar += 2;
         cout << endl;
     }
+    //Another Technic
+    int a,b,nn;
+    cin >> nn;
+    for(int a = 1; a<=nn; a++){
+        for(int b = 1; b<=nn-a; b++){
+            cout << " ";
+        }
+        for(int b = 1; b<=2*a-1; b++){
+            cout << "*";
+        }
+        cout << endl;
+    }
 }
