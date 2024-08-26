@@ -20,8 +20,35 @@ int main(){
     for(int i=0; i<n; i++){
         cout << arr[i];
     }
+    int r = swapFun(arr);
+    cout << r;
 }
 
+int swapFun(x){
+    return x;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     /*
     
     // First Approach
