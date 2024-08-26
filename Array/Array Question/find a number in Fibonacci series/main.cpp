@@ -12,7 +12,7 @@ int main(){
     for(int i=2; i<=n; i++){
         arr[i] = arr[i-1] + arr[i-2];
     }
-    cout << arr[n] << endl;
+    cout << arr[n] << endl; 
     
 }
 
