@@ -3,6 +3,34 @@
 using namespace std;
 
 int main(){
+    int arr[5] = {1,2,3,4,5};
+    cout << "Size of arr is : " << sizeof(arr) << endl; // 20
+    cout << "length of arr is : " << sizeof(arr) / sizeof(arr[0]) << endl; // 5
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // 5 Approach for create array
     
     /*
@@ -26,7 +54,7 @@ int main(){
     for(int i = 0; i<5; i++){
         cout << arr3[i] << endl;
     }
-    */
+
     
     // fourth approach
     int arr4[5] = {1,2};
@@ -42,6 +70,7 @@ int main(){
     int arr55[5] = {1};
     for(int i = 0; i<5; i++){
         cout << arr55[i] << endl;
-    }
-
-}
+    } // 1 0 0 0 0
+    
+    
+    */
