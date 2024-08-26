@@ -17,7 +17,8 @@ int main(){
     }
     // Or 
     int afterSum2 = (n * (n+1)) / 2;
-    int result = afterSum2 - preSum;
+    int result = afterSum - preSum;
+    // int result = afterSum2 - preSum;
     cout << result;
     
     
