@@ -17,8 +17,13 @@ int main(){
         cin >> arr[i];
     }
     int temp = arr[n-1];
-    for(int i = n-2; i>0; i--){
-        arr[i+1] = arr[i];
+    for(int i = n-2; i>=0; i--){
+        if(i!= 0){
+            arr[i+1] = arr[i];
+        }else{
+            arr[i+1] = arr[i];
+            arr[i] = temp;
+        }
     }
     printArr(arr,n);
 
