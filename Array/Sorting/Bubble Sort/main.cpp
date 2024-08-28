@@ -5,16 +5,16 @@ int main(){
     int n = 5;
     int arr[n] = {4,11,30,5,2};
     
-    for(int i = 1; i<n; i++){
-        for(int j = 1; j<=n-i; j++){
-            if(arr[j]<arr[j-1]){
-                swap(arr[j],arr[j-1]);
+    for(int i = n-2; i>=0; i--){
+        for(int j = 0; j<=i; j++){
+            if(arr[j]>arr[j+1]){
+                swap(arr[j],arr[j+1]);
             }
         }
     }
     
     for(int i = 0; i<n; i++){
-        cout << arr[i];
+        cout << arr[i] << " ";
     }
 }
 
